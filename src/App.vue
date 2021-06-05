@@ -25,6 +25,14 @@ import Contact from './components/Contact'
 
 export default {
   name: 'App',
+  watch: {
+    title: {
+        immediate: true,
+        handler() {
+            document.title = 'Delcey Hugo || Portfolio';
+        }
+    }
+  },
   components: {
     Header,
     Home,
