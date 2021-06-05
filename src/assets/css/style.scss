@@ -1,0 +1,217 @@
+/* North import */
+@font-face {
+    font-family: 'North', sans-serif;
+    src: url('/assets/North.otf') format('truetype');
+}
+/* Pacifico import */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+/* Montserrat import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap');
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: radial-gradient(#0c0c0c, #000000);
+    margin: 0;
+    color: #DEDEDE;
+    user-select: none;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    /* cursor: none; */
+}
+::-webkit-scrollbar {
+    display: none;
+}
+#app {
+    margin: 0;
+    width: 100vw;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+a {
+    text-decoration: none;
+    color: #DEDEDE;
+}
+svg {
+    fill: currentColor;
+    cursor: pointer;
+}
+.container {
+    padding: 150px 0px 0px 200px;
+    font-family: 'Montserrat', sans-serif;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+ul span{
+    font-weight: 600;
+}
+h1 {
+    font-weight: 800;
+    margin: 10px 0px 20px 0px;
+    font-size: 70px;
+}
+
+
+.text{
+    width: 40%;
+    margin-top: 100px;
+    font-size: 19px;
+    font-weight: 500;
+}
+span.active{
+    color: #DB8C57;
+}
+
+
+/* Cursor */
+#cursor {
+    display: inline;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: currentColor;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    mix-blend-mode: difference;
+    backface-visibility: hidden;
+    transform-origin: 100% 100%;
+    z-index: 10;
+    pointer-events: none;
+}
+.click-event {
+    animation: cursorAnim .5s forwards;
+}
+@keyframes cursorAnim {
+    0% {
+        background-color: #DB8C57;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/* Header */
+#header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
+    mix-blend-mode: difference;
+    color: #DEDEDE;
+    z-index: 11;
+    nav {
+        display: flex;
+        font-family: "North", sans-serif;
+        margin: 0px 0px 0px 150px;
+        overflow: hidden;
+        ul{
+            display: flex;
+            vertical-align: middle;
+            li {
+            display: flex;
+            vertical-align: middle;
+            margin: 0px 20px;
+                a {
+                    padding: 10px 30px;
+                }
+            } 
+        }
+    }
+    #social {
+        display: flex;
+        padding: 0;
+        list-style-type: none;
+        li {
+            padding: 20px 5px;
+            margin: 0px;
+            &:last-of-type{
+                margin-right: 5vw;
+            }
+            a {
+                padding: 0;
+                margin: 0;
+                svg {
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}
+
+
+/* Home */
+#home {
+    font-family: 'Montserrat', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    color: #DEDEDE;
+    h1 {
+        font-weight: 800;
+        margin: 10px 0px 20px 0px;
+        font-size: 70px;
+        span {
+            color: #DB8C57;
+        }
+    }
+    p {
+        font-weight: 500;
+        font-size: 22px;
+        margin-top: 100px;
+    }
+    button {
+        margin: 10px 50px 0px 0px;
+        width: 180px;
+        height: 40px;
+        font-weight: 700;
+        font-size: 14px;
+        color: #DEDEDE;
+        cursor: pointer;
+        background-color: #db8c5700;
+        border: solid 1px #DEDEDE;
+        border-radius: 5px;
+        &:first-of-type {
+            background-color: #DB8C57;
+            color: #272727;
+            border: none;
+        }
+    }
+}
+
+
+/* About */
+#about {
+    width: 100vw;
+    height: 100vh;
+    background-color: #DEDEDE;
+    color: #191919;
+    z-index: 1;
+}
+
+
+/* Work */
+#work {
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    background-image: radial-gradient(#0c0c0c, #000000);
+}
+
+/* Contact */
+#contact {
+    width: 100vw;
+    height: 100vh;
+    background-color: #DEDEDE;
+    color: #191919;
+    z-index: 3;
+}
