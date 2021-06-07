@@ -1,6 +1,6 @@
 <template>
     <div id="about">
-        <div class="container about">
+        <div class="section-container about">
             <h1>About me</h1>
             <p class="text"><span class="active">In love</span> about the Web and all that revolves around, I like new technologies, trends in web development as well and the study of new skills of all kinds!
                 <br>I like to create websites with real added value, with features, a design and a user experience that stands out from others<br>

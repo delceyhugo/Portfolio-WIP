@@ -40,9 +40,18 @@ svg {
     fill: currentColor;
     cursor: pointer;
 }
-.container {
-    padding: 150px 0px 0px 200px;
+.container-fluid{
+    padding: 0px !important;
+}
+.row{
+    margin: 0px;
+    padding: 0px;
+}
+.section-container {
+    padding: 15vh 0px 0px 10vw;
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 ul{
     list-style-type: none;
@@ -102,51 +111,47 @@ span.active{
 
 /* Header */
 #header {
-    display: flex;
-    justify-content: space-between;
     position: fixed;
     width: 100vw;
-    height: 10vh;
     mix-blend-mode: difference;
     color: #DEDEDE;
     z-index: 11;
     nav {
-        display: flex;
         font-family: "North", sans-serif;
-        margin: 0px 0px 0px 150px;
-        overflow: hidden;
-        ul{
+        height: 10vh;
+        #nav{
             display: flex;
-            vertical-align: middle;
+            margin: 0px 0px 0px 10vw;
+            padding: 0;
             li {
-            display: flex;
-            vertical-align: middle;
-            margin: 0px 20px;
+                display: flex;
                 a {
                     padding: 10px 30px;
                 }
             } 
         }
-    }
-    #social {
-        display: flex;
-        padding: 0;
-        list-style-type: none;
-        li {
-            padding: 20px 5px;
-            margin: 0px;
-            &:last-of-type{
-                margin-right: 5vw;
-            }
-            a {
-                padding: 0;
-                margin: 0;
-                svg {
-                    padding: 10px;
+        #social {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            li {
+                padding: 0px 5px;
+                margin: 0px;
+                &:last-of-type{
+                    margin-right: 5vw;
+                }
+                a {
+                    padding: 0;
+                    margin: 0;
+                    svg {
+                        padding: 10px;
+                    }
                 }
             }
         }
     }
+
 }
 
 
@@ -167,7 +172,7 @@ span.active{
     p {
         font-weight: 500;
         font-size: 22px;
-        margin-top: 100px;
+        margin-top: 80px;
     }
     button {
         margin: 10px 50px 0px 0px;

@@ -1,6 +1,6 @@
 <template>
     <div id="home">
-        <div class="container home">
+        <div class="section-container home">
             <p>I'm <span id="name">Hugo Delcey</span></p>
             <h1>FrontEnd Developer<br>&amp; Fullstack Javascript<br><span class="color-active">from France</span></h1>
             <button class="home-button" @mouseover="cursorEvent($event,'side')" @mouseleave="cursorEvent($event,'leave')">Check my work</button>

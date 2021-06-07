@@ -1,6 +1,6 @@
 <template>
     <div id="contact">
-        <div class="container contact">
+        <div class="section-container contact">
             <h1>Get<br> in touch</h1> 
         </div>
     </div>

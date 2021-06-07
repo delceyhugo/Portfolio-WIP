@@ -1,6 +1,6 @@
 <template>
     <div id="work">
-        <div class="container work">
+        <div class="section-container work">
             <h1>Explore<br> my work</h1>
         </div>
     </div>
