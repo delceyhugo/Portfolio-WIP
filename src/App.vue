@@ -49,6 +49,14 @@ export default {
       },
     }
   },
+  setup() {
+    const login = () => {
+      event('login', { method: 'Google' })
+    }
+    return {
+      login
+    }
+  },
   mounted() {
     this.cursor.elCursor = document.querySelector('#cursor')
     gsap.from("#header", {y: -200, opacity: 0, duration: 0.5, delay: 0, ease: 'power1'})
@@ -102,7 +110,7 @@ export default {
           this.cursor.cursorFollow = false
           break
       }
-    },
+    }
   }
 }
 </script>
