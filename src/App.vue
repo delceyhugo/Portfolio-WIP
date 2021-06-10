@@ -2,7 +2,7 @@
   <div id="wrapper" @click='cursorEvent({el:$event,type:"click"})' @mousemove='cursorEvent({el:$event,type:"stick"})' @mouseleave='cursorEvent({el:$event,type:"blur"})'>
     <div id="cursor"></div>
     <Header v-on:cursorEvent="cursorEvent($event)"/>
-    <SlideScroll>
+    <SlideScroll :duration = 1>
       <Home class="section" @cursorEvent="cursorEvent($event)"/>
       <About class="section" @cursorEvent="cursorEvent($event)"/>
       <Work class="section" @cursorEvent="cursorEvent($event)"/>
@@ -49,14 +49,6 @@ export default {
       },
     }
   },
-  setup() {
-    const login = () => {
-      event('login', { method: 'Google' })
-    }
-    return {
-      login
-    }
-  },
   mounted() {
     this.cursor.elCursor = document.querySelector('#cursor')
     gsap.from("#header", {y: -200, opacity: 0, duration: 0.5, delay: 0, ease: 'power1'})
@@ -75,12 +67,12 @@ export default {
             this.cursor.elCursor.style.transform = 'translate('+ (event.el.pageX + 5) +'px,'+ ((event.el.pageY + 5)) + 'px)'
           }
           break
-        case 'click':
-          document.querySelector('#cursor').classList.add('click-event')
-          setTimeout(() => {
-            document.querySelector('#cursor').classList.remove('click-event')
-          }, 500)
-          break
+        // case 'click':
+        //   document.querySelector('#cursor').classList.add('click-event')
+        //   setTimeout(() => {
+        //     document.querySelector('#cursor').classList.remove('click-event')
+        //   }, 500)
+        //   break
         case 'hover':
           this.cursor.cursorFollow = false
           this.cursor.elCursor.style.borderRadius = '0%'

@@ -44,12 +44,12 @@ svg {
     padding: 0px !important;
 }
 .row{
-    margin: 0px;
+    margin: 0px !important;
     padding: 0px;
 }
-.section-container {
-    padding: 15vh 0px 0px 10vw;
+.content-container {
     font-family: 'Montserrat', sans-serif;
+    padding: 15vh 10vw 0px 10vw;
 }
 ul{
     list-style-type: none;
@@ -64,16 +64,6 @@ h1 {
     font-size: 70px;
 }
 
-
-.text{
-    width: 40%;
-    margin-top: 100px;
-    font-size: 19px;
-    font-weight: 500;
-}
-span.active{
-    color: #DB8C57;
-}
 
 
 /* Cursor */
@@ -199,6 +189,13 @@ span.active{
     background-color: #DEDEDE;
     color: #191919;
     z-index: 1;
+    .text{
+        font-size: 19px;
+        font-weight: 500;
+    }
+    span.active{
+        color: #DB8C57;
+    }
 }
 
 

@@ -1,5 +1,5 @@
 {
-  "name": "porfolio-2.1",
+  "name": "delceyhugo-portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -13,7 +13,7 @@
     "core-js": "^3.6.5",
     "gsap": "^3.6.1",
     "vue": "^3.0.0",
-    "vue-gtag": "^2.0.1"
+    "vue-gtag-next": "^1.14.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

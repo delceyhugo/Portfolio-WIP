@@ -3,10 +3,10 @@
     <nav class="row justify-content-between"> 
       <ul id="nav" class="col-7">
         <div class="row align-items-center">
-          <li class="col nav-link"><a @mouseover="cursorEvent($event,'hover')" @mouseleave="cursorEvent($event,'leave')" v-on:click.prevent href="#home">01.<br>Home</a></li>
-          <li class="col nav-link"><a @mouseover="cursorEvent($event,'hover')" @mouseleave="cursorEvent($event,'leave')" v-on:click.prevent href="#about">02.<br>About</a></li>
-          <li class="col nav-link"><a @mouseover="cursorEvent($event,'hover')" @mouseleave="cursorEvent($event,'leave')" v-on:click.prevent href="#work">03.<br>Work</a></li>
-          <li class="col nav-link"><a @mouseover="cursorEvent($event,'hover')" @mouseleave="cursorEvent($event,'leave')" v-on:click.prevent href="#contact">04.<br>Contact</a></li>
+          <li class="col nav-link nav-anchor"><a @mouseover="cursorEvent($event,'hover')" @mouseleave="cursorEvent($event,'leave')" v-on:click.prevent href="#home">01.<br>Home</a></li>
+          <li class="col nav-link nav-anchor"><a @mouseover="cursorEvent($event,'hover')" @mouseleave="cursorEvent($event,'leave')" v-on:click.prevent href="#about">02.<br>About</a></li>
+          <li class="col nav-link nav-anchor"><a @mouseover="cursorEvent($event,'hover')" @mouseleave="cursorEvent($event,'leave')" v-on:click.prevent href="#work">03.<br>Work</a></li>
+          <li class="col nav-link nav-anchor"><a @mouseover="cursorEvent($event,'hover')" @mouseleave="cursorEvent($event,'leave')" v-on:click.prevent href="#contact">04.<br>Contact</a></li>
         </div>
 
       </ul>
