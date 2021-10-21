@@ -1,7 +1,7 @@
 <template>
     <div id="work" >
         <div id="work-header">
-            <h1 id="work-header-title">Explore my work</h1>
+            <h1 id="work-header-title">{{content.title}}</h1>
         </div>
         <div class="content">
             <div id="work-content" @mousemove="moveList($event)">
