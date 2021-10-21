@@ -1,28 +1,83 @@
-<template> 
-    <div id="about" class="container-fluid">
-        <div class="about row content-container">
-            <div class="col-12">
-                <h1>About me</h1>
+<template>
+    <div id="about">
+        <div class="content">
+            <h1 id="about-header">{{content.header.title}}</h1>
+            <div id="about-content">
+                <p class="text" id="text-1"><span class="active">{{content.header.text1.title}}</span>{{content.header.text1.content1}}<br/>{{content.header.text1.content2}}</p>
+                <p class="text" id="text-2">{{content.header.text2.content1}}<br/>{{content.header.text2.content2}}</p>
+                <p class="text" id="text-3">{{content.header.text3}}</p>
             </div>
-            <div class="col-lg-9 col-md-6">
-                <p class="text"><span class="active">In love</span> about the Web and all that revolves around, I like new technologies, trends in web development as well and the study of new skills of all kinds!
-                <br>I like to create websites with real added value, with features, a design and a user experience that stands out from others</p>
-            </div>
-            <div class="col-lg-9 col-md-6">
-                <p class="text">As Front-end developer, I master the majority of technologies related to this specialty.
-                <br>I am also passionate about Javascript, which led me to discover Back-end with Node as well as other Back-end languages.</p>
-            </div>
-            <div class="col-lg-9 col-md-6">
-                <p class="text">I also have the basics in many fields and other languages that interest me (Motion Design, Vector graphics creation, Artificial intelligence, Deep learning).</p>
-            </div>
-            <div class="col-lg-9 col-md-6">
-                <ul>
-                    <h3>Soft Skills</h3>
-                    <li class="about-li">✓ <span>Curious</span> by nature, I like to discover the functioning of what surrounds me.</li>
-                    <li class="about-li">✓ <span>Reliable</span>, I am a trustworthy person!</li>
-                    <li class="about-li">✓ <span>Independent</span>, thanks to self-learning, I know how to work independently.</li>
+            <ul id="about-footer">
+                <h2 class="about-f-header">Hard Skills</h2>
+                <div class="hard-skill">
+                    <div class="hs-front">
+                        <h3 class="hs-title">FrontEnd</h3>
+                        <div class="card">
+                            <h4>HTML & Css</h4>
+                            <li>Sass</li>
+                            <li>Bootstrap</li>
+                            <li>Css grid & Flexbox</li>
+                        </div>
+                        <div class="card">
+                            <h4>JavaScript</h4>
+                            <li>jQuery</li>
+                            <li>GSAP</li>
+                            <li>JsDoc</li>
+                            <li>Jasmine</li>
+                        </div>
+                        <div class="card">
+                            <h4>Vue</h4>
+                            <li>VueX</li>
+                            <li>VueRouter</li>
+                        </div>
+                        <div class="card">
+                            <h4>React</h4>
+                            <li>ReactRouter</li>
+                        </div>
+                        <div class="card">
+                            <h4>CMS</h4>
+                            <li>WordPress</li>
+                        </div>
+                    </div>
+                    <div class="hs-back">
+                        <h3 class="hs-title">BackEnd</h3>
+                        <div class="card">
+                            <h4>Node.js</h4>
+                            <li>Express.js</li>
+                            <li>Socket.io</li>
+                            <li>Api Rest</li>
+                        </div>
+                        <div class="card">
+                            <h4>Php</h4>
+                        </div>
+                        <div class="card">
+                            <h4>MongoDB</h4>
+                        </div>
+                        <div class="card">
+                            <h4>MySQL</h4>
+                            <li>PhpMyAdmin</li>
+                        </div>
+                    </div>
+                    <div class="hs-other">
+                        <h3 class="hs-title">Other</h3>
+                        <div class="card">
+                            <h4>Git</h4>
+                        </div>
+                        <div class="card">
+                            <h4>Gantt</h4>
+                        </div>
+                        <div class="card">
+                            <h4>UML</h4>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="about-f-header" >Soft Skills</h2>
+                <ul class="soft-skill">
+                    <li class="about-li">✓ <span>{{content.softskill.curious.title}}</span>{{content.softskill.curious.content}}</li>
+                    <li class="about-li">✓ <span>{{content.softskill.reliable.title}}</span>{{content.softskill.reliable.content}}</li>
+                    <li class="about-li">✓ <span>{{content.softskill.independent.title}}</span>{{content.softskill.independent.content}}</li>
                 </ul>
-            </div>
+            </ul>
         </div>
     </div>
 </template>
@@ -33,17 +88,12 @@ gsap.registerPlugin(ScrollTrigger, Draggable, MotionPathPlugin, TextPlugin, Scro
 
 export default {
     name: 'About',
-    mounted() {
-        gsap.from(".about-li", {
-            scrollTrigger: ".about-li",
-            x: -100,
-            opacity: 0, 
-            duration: 0.8, 
-            delay: 2, 
-            ease: 'power1',
-            stagger: .3
-        });
-    },
+     props: ['content'],
+    methods: {
+        cursorEvent: function(el, type){
+            this.$emit('cursorEvent',{el,type})
+        }
+    }
 }
 </script>
 

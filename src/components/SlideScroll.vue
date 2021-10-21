@@ -26,65 +26,35 @@ export default {
     },
     props: ['duration'],
     mounted() {
+        // Get El
         this.section = document.querySelectorAll('.section')
         this.nav = document.querySelectorAll('.nav-anchor')
+
         // Scrolling event
         window.addEventListener("wheel", (e) => this.onScroll(e))
-        window.addEventListener('touchstart', (e) => (this.property.onload == false ? (this.swipe.xDown = e.touches[0].clientX, this.swipe.yDown = e.touches[0].clientY) : null) , false);        
-        window.addEventListener('touchmove', (e) => (this.property.onload == false ? this.onSwipe(e) : null), false);
 
-
+        // Link Nav 
         this.nav.forEach(el => {
             el.addEventListener("click", (e) => this.onClick(e))
         });
     },
     methods: {
         onScroll: function(e){
+
+            console.log(this.section[this.property.active].scrollTop)
+
             if(this.property.onload == false){
-                switch (e.wheelDelta) {
-                    case 120:
-                        if(this.property.active > 0){
-                            gsap.to(window, {duration: this.duration, ease: "Power2.easeInOut", scrollTo: this.section[(this.property.active - 1)], onStart: () => this.property.onload = true, onComplete: () => (this.property.onload = false, this.property.active--)})
-                        }
-                        break;
-                    case -120:
-                        if(this.property.active !== (this.section.length - 1)){
-                            gsap.to(window, {duration: this.duration, ease: "Power2.easeInOut", scrollTo: this.section[(this.property.active + 1)], onStart: () => this.property.onload = true, onComplete: () => (this.property.onload = false, this.property.active++)})
-                        }
-                        break;
-                }
-            }
-        },
-        onSwipe: function(e){
-            this.swipe.xUp = e.touches[0].clientX
-            this.swipe.yUp = e.touches[0].clientY
-            let xDiff = this.swipe.xDown - this.swipe.xUp
-            let yDiff = this.swipe.yDown - this.swipe.yUp
-            if(Math.abs(xDiff) > Math.abs(yDiff)){
-                if( xDiff > 0){
-                    // Left
-                    console.log('Left')
-                }
-                else{
-                    // Right
-                    console.log('Right')
-                }
-            }
-            else {
-                if( yDiff > 0){
-                    // Up
-                    if((this.property.active !== (this.section.length - 1)) && this.property.onload == false){
+                if(e.wheelDelta == -120 && (this.section[this.property.active].scrollTop + this.section[this.property.active].clientHeight) == (this.section[this.property.active].firstChild.clientHeight)){
+                    if(this.property.active !== (this.section.length - 1)){
                         gsap.to(window, {duration: this.duration, ease: "Power2.easeInOut", scrollTo: this.section[(this.property.active + 1)], onStart: () => this.property.onload = true, onComplete: () => (this.property.onload = false, this.property.active++)})
                     }
                 }
-                else{
-                    // Down
-                    if(this.property.active > 0 && this.property.onload == false){
+                else if(e.wheelDelta == 120 && (this.section[this.property.active].scrollTop) == 0){
+                    if(this.property.active > 0){
                         gsap.to(window, {duration: this.duration, ease: "Power2.easeInOut", scrollTo: this.section[(this.property.active - 1)], onStart: () => this.property.onload = true, onComplete: () => (this.property.onload = false, this.property.active--)})
                     }
                 }
             }
-
         },
         onClick: function(e){
             for(let i = 0; i < this.section.length; i++){

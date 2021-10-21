@@ -1,0 +1,114 @@
+{
+    "fr":{
+        "header":{
+            "nav":{
+                "home":"Bienvenue",
+                "about":"Presentation",
+                "work":"Creations",
+                "contact":"Contact"
+            }
+        },
+        "home":{
+            "head":"Je suis ",
+            "title":{
+                "front":"Développeur FrontEnd",
+                "from":"basé en France"
+            },
+            "button":{
+                "work":"Mes créations",
+                "touch":"Me contacter"
+            }
+        },
+        "about":{
+            "header":{
+                "title":"Qui suis-je",
+                "text1":{
+                    "title":"Passionné",
+                    "content1":" par le Web et ces phénomènes, j'aime les nouvelles technologies, les tendances dans le développement web ainsi que l'étude de nouvelles compétences en toutes sortes !",
+                    "content2":"J'aime créer des sites qui se démarque, avec des fonctionnalités innovantes et une UX simple."
+                },
+                "text2":{
+                    "content1":"Spécialisé Front-end, j'ai étudié la majorités des technologies lien a cette spécialité.",
+                    "content2":"Je suis aussi passionné par le Javascript, ce qui ma amené a découvrir le Back-end avec Node."
+                },
+                "text3":"Je procède aussi des bases dans de nombreux domaines et d'autres langages qui m'intéressent (Motion Design, Création graphique vectorielle, Intelligence artificielle, Deep learning)."
+            },
+            "softskill":{
+                "curious":{
+                    "title":"Curieux",
+                    "content":"par nature, j'aime découvrir le fonctionnement de ce qui m'entoure."
+                },
+                "reliable":{
+                    "title":"Fiable",
+                    "content":", je suis une personne digne de confiance !"
+                },
+                "independent":{
+                    "title":"Indépendant",
+                    "content":" grâce a l'autodidaxie, je sais me débrouiller tout seul."
+                }
+            }
+        },
+        "work":{
+            "title":"Mes Réalisation"
+        },
+        "contact":{
+
+        }
+    },
+    "en":{
+        "header":{
+            "nav":{
+                "home":"Home",
+                "about":"About",
+                "work":"Work",
+                "contact":"Contact"
+            }
+        },
+        "home":{
+            "head":"I'm ",
+            "title":{
+                "front":"FrontEnd Developer",
+                "from":"from France"
+            },
+            "button":{
+                "work":"Check my work",
+                "touch":"Get in Touch"
+            }
+        },
+        "about":{
+            "header":{
+                "title":"About me",
+                "text1":{
+                    "title":"In love",
+                    "content1":" about the Web and everything that is part of it, I like new technologies, trends in web development and studying new skills of all kinds!",
+                    "content2":"I like to create websites with real added value, with features and user experience that stands out from others."
+                },
+                "text2":{
+                    "content1":"As Front-end developer, I've studied a lots of technologies related to this specialty.",
+                    "content2":"I am also passionate about JavaScript, which led me to discover Back-end with Node."
+                },
+                "text3":"I also have the basics in many fields and other languages that interest me (Motion Design, Vector graphics creation, Artificial intelligence, Deep learning)."
+            },
+            "softskill":{
+                "curious":{
+                    "title":"Curious",
+                    "content":" by nature, I like to discover the functioning of what surrounds me."
+                },
+                "reliable":{
+                    "title":"Reliable",
+                    "content":", I am a trustworthy person!"
+                },
+                "independent":{
+                    "title":"Independent",
+                    "content":" thanks to self-learning, I know how to work independently."
+                }
+            }
+        },
+        "work":{
+            "title":"Explore my work"
+        },
+        "contact":{
+
+        }
+    }
+}
