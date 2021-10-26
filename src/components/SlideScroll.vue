@@ -40,9 +40,6 @@ export default {
     },
     methods: {
         onScroll: function(e){
-
-            console.log(this.section[this.property.active].scrollTop)
-
             if(this.property.onload == false){
                 if(e.wheelDelta == -120 && (this.section[this.property.active].scrollTop + this.section[this.property.active].clientHeight) == (this.section[this.property.active].firstChild.clientHeight)){
                     if(this.property.active !== (this.section.length - 1)){

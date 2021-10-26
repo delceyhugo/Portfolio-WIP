@@ -36,7 +36,7 @@
             "softskill":{
                 "curious":{
                     "title":"Curieux",
-                    "content":"par nature, j'aime découvrir le fonctionnement de ce qui m'entoure."
+                    "content":" par nature, j'aime découvrir le fonctionnement de ce qui m'entoure."
                 },
                 "reliable":{
                     "title":"Fiable",
@@ -49,7 +49,7 @@
             }
         },
         "work":{
-            "title":"Mes Réalisation"
+            "title":"Mes Realisation"
         },
         "contact":{
 

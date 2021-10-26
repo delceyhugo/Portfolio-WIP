@@ -1,5 +1,5 @@
 <template>
-  <div id="wrapper" @click='cursorEvent({el:$event,type:"click"})' @mousemove='cursorEvent({el:$event,type:"stick"})' @mouseleave='cursorEvent({el:$event,type:"blur"})' ref="wrapper">
+  <div id="wrapper" @mousemove='cursorEvent({el:$event,type:"stick"})' @mouseleave='cursorEvent({el:$event,type:"blur"})' ref="wrapper">
     <div id="cursor"></div>
     <Header :content = 'tradContent.header' @cursorEvent="cursorEvent($event)" @internationalization="international($event)"/>
     <SlideScroll :duration = 1 >
@@ -57,7 +57,9 @@ export default {
     gsap.from("#header", {y: -200, opacity: 0, duration: 0.5, delay: 0, ease: 'power1'})
     gsap.from('.nav-link', {y: -100, opacity: 0, duration: 0.4, delay: 0, ease: 'power1', stagger: .2})
 
-
+    window.addEventListener('deviceorientation', e => {
+      console.log(e)
+    })
 
 
     document.querySelector('#wrapper').addEventListener('mousemove', e => {
@@ -74,15 +76,19 @@ export default {
       this.cursorParalax(e, '.about-f-header', -100)
       this.cursorParalax(e, '.hs-title', -90)
       this.cursorParalax(e, '.card', -80)
-      // this.cursorParalax(e, '.soft-skill' -80)
+      this.cursorParalax(e, '.soft-skill', -80)
       // Work
       this.cursorParalax(e, '#work-header-title', -100)
+      this.cursorParalax(e, '#work-main', -50)
+
       
     })
   },
   methods: {
     // Cursor methods
     cursorEvent: function(event) {
+      console.log(event.el)
+      event.el.preventDefault()
       let cursorStyle = this.cursor.elCursor.style
       switch (event.type) {
         case 'stick':

@@ -25,12 +25,14 @@ export default {
     data() {
         return {
             projets: [
+                {content: 'Chalets et caviar',
+                href: ''},
                 {content: 'Les Films de Plein Air',
                 href: ''},
                 {content: 'ExpressFood',
                 href: ''},
                 {content: 'Générateur de sitations',
-                href: 'https://delceyhugo.github.io/oc-projet5/docs/'},
+                href: 'https://delceyhugo.github.io/oc-projet5/'},
                 {content: 'Jeu de plateau tour par tour',
                 href: 'https://delceyhugo.github.io/oc-projet6/'},
                 {content: 'App avis de restaurants',
