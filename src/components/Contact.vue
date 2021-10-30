@@ -2,26 +2,26 @@
     <div id="contact">
         <div class="content">
             <aside id="work-header-title">
-                <h1>Let's</h1>
-                <h1 class="right">get in</h1>
-                <h1>touch</h1>
+                <h1>{{content.title.one}}</h1>
+                <h1 class="right">{{content.title.two}}</h1> 
+                <h1>{{content.title.three}}</h1>
             </aside>
             <section id="work-main">
                 <main>
                     <form action="mailto:delcey.hugo@outlook.fr" method="get" name="contact" autocomplete="nope">
-                        <label for="name">Full Name</label>
+                        <label for="name">{{content.form.name}}</label>
                         <input type="text" name="name" id="form-name" autocomplete="no-name">
                         <div class="form-wrapper">
                             <div>
-                                <label for="email">Email</label>
+                                <label for="email">{{content.form.email}}</label>
                                 <input type="email" name="email" id="form-email" required="required" >
                             </div>
                             <div>
-                                <label for="phone">Phone</label>
+                                <label for="phone">{{content.form.phone}}</label>
                                 <input type="tel" name="phone" id="form-phone" autocomplete="no-tel">
                             </div>
                         </div>
-                        <label for="message">Message</label>
+                        <label for="message">{{content.form.message}}</label>
                         <textarea name="message" id="form-message" cols="1" rows="1" required="required"></textarea>
                         <div class="form-button">
                             <button>
@@ -40,7 +40,8 @@
 
 <script>
 export default {
-    name: 'Contact', 
+    name: 'Contact',
+    props: ['content']
 }
 </script>
 

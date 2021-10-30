@@ -78,6 +78,10 @@
                     <li class="about-li">✓ <span>{{content.softskill.independent.title}}</span>{{content.softskill.independent.content}}</li>
                 </ul>
             </ul>
+            <a class="codewars" href="https://www.codewars.com/users/delceyhugo">
+                <img src="https://www.codewars.com/users/delceyhugo/badges/micro" alt="Codewars profil">
+            </a>
+            
         </div>
     </div>
 </template>
@@ -88,7 +92,7 @@ gsap.registerPlugin(ScrollTrigger, Draggable, MotionPathPlugin, TextPlugin, Scro
 
 export default {
     name: 'About',
-     props: ['content'],
+    props: ['content'],
     methods: {
         cursorEvent: function(el, type){
             this.$emit('cursorEvent',{el,type})

@@ -77,6 +77,7 @@ export default {
       this.cursorParalax(e, '.hs-title', -90)
       this.cursorParalax(e, '.card', -80)
       this.cursorParalax(e, '.soft-skill', -80)
+      this.cursorParalax(e, '.codewars', -80)
       // Work
       this.cursorParalax(e, '#work-header-title', -100)
       this.cursorParalax(e, '#work-main', -50)
@@ -87,8 +88,6 @@ export default {
   methods: {
     // Cursor methods
     cursorEvent: function(event) {
-      console.log(event.el)
-      event.el.preventDefault()
       let cursorStyle = this.cursor.elCursor.style
       switch (event.type) {
         case 'stick':

@@ -52,7 +52,17 @@
             "title":"Mes Realisation"
         },
         "contact":{
-
+            "title":{
+                "one":"Let's",
+                "two":"get in",
+                "three":"touch"
+            },
+            "form":{
+                "name":"Nom",
+                "email":"Email",
+                "phone":"Tel",
+                "message":"Message"
+            }
         }
     },
     "en":{
@@ -108,7 +118,17 @@
             "title":"Explore my work"
         },
         "contact":{
-
+            "title":{
+                "one":"Let's",
+                "two":"get in",
+                "three":"touch"
+            },
+            "form":{
+                "name":"Full Name",
+                "email":"Email",
+                "phone":"Phone",
+                "message":"Message"
+            }
         }
     }
 }
