@@ -48,8 +48,8 @@ export default {
         elCursor : null,
         cursorFollow : true
       },
-      languageToggle: 'en',
-      tradContent: data.en
+      languageToggle: 'fr',
+      tradContent: data.fr
     }
   },
   mounted() {

@@ -27,9 +27,9 @@
       </ul>
       <ul id="languages">
         <li>
-          <a :class='{active: active == "en", notactive: active == "fr"}' href="" @click.prevent="internationalization('en')" @mousemove="cursorEvent($event,'hoverCenter')" @mouseleave="cursorEvent($event,'leave')">En</a>
-          <span> - </span>
           <a :class='{active: active == "fr", notactive: active == "en"}'  href="" @click.prevent="internationalization('fr')" @mousemove="cursorEvent($event,'hoverCenter')" @mouseleave="cursorEvent($event,'leave')">Fr</a>
+          <span> - </span>
+          <a :class='{active: active == "en", notactive: active == "fr"}' href="" @click.prevent="internationalization('en')" @mousemove="cursorEvent($event,'hoverCenter')" @mouseleave="cursorEvent($event,'leave')">En</a>
         </li>
       </ul> 
     </aside>
@@ -42,7 +42,7 @@ export default {
   props: ['content'],
   data(){
     return{
-      active:'en'
+      active:'fr'
     }
   },
   methods: {
