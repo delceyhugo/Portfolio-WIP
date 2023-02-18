@@ -57,9 +57,6 @@ export default {
     gsap.from("#header", {y: -200, opacity: 0, duration: 0.5, delay: 0, ease: 'power1'})
     gsap.from('.nav-link', {y: -100, opacity: 0, duration: 0.4, delay: 0, ease: 'power1', stagger: .2})
 
-    window.addEventListener('deviceorientation', e => {
-      console.log(e)
-    })
 
 
     document.querySelector('#wrapper').addEventListener('mousemove', e => {

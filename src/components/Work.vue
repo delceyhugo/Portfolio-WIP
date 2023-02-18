@@ -25,8 +25,8 @@ export default {
     data() {
         return {
             projets: [
-                {content: 'Chalets et caviar',
-                href: ''},
+                {content: 'Self-Driving Car',
+                href: 'https://github.com/delceyhugo/Self-Driving-Car'},
                 {content: 'Les Films de Plein Air',
                 href: 'https://github.com/delceyhugo/oc-projet3'},
                 {content: 'ExpressFood',
@@ -39,10 +39,12 @@ export default {
                 href: 'https://github.com/delceyhugo/oc-projet7'},
                 {content: 'To-do list',
                 href: 'https://github.com/delceyhugo/oc-projet8'},
-                {content: 'Tripper (WIP)',
-                href: 'https://github.com/delceyhugo/Tripper'},
                 {content: 'Starry Weather',
-                href: 'https://starryweather.delceyhugo.dev/'}
+                href: 'https://starryweather.delceyhugo.dev/'},
+                {content: 'Path-Finder',
+                href: 'https://github.com/delceyhugo/Path-Finder'},
+                {content: 'Starfield Digipick',
+                href: 'https://github.com/delceyhugo/StarfieldDigipick'},
             ]
         }
     },

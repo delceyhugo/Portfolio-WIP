@@ -6,8 +6,8 @@
         </div>
         <h1 id="home-content">{{content.title.front}}<br>&amp; Fullstack Javascript<br><span class="color-active">{{content.title.from}}</span></h1>
         <div id="home-footer">
-          <button class="home-button nav-anchor" @mouseover="cursorEvent($event,'side')" @mouseleave="cursorEvent($event,'leave')" v-on:click.prevent href="#work">{{content.button.work}}</button>
-          <button class="home-button nav-anchor" @mouseover="cursorEvent($event,'side')" @mouseleave="cursorEvent($event,'leave')" v-on:click.prevent href="#contact">{{content.button.touch}}</button>
+          <button class="home-button nav-anchor" @mousemove="cursorEvent($event,'hover')" @mouseover="cursorEvent($event,'hover')" @mouseleave="cursorEvent($event,'leave')" v-on:click.prevent href="#work">{{content.button.work}}</button>
+          <button class="home-button nav-anchor" @mousemove="cursorEvent($event,'hover')" @mouseover="cursorEvent($event,'side')" @mouseleave="cursorEvent($event,'leave')" v-on:click.prevent href="#contact">{{content.button.touch}}</button>
         </div>
       </div>
     </div>

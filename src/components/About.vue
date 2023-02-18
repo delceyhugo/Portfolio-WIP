@@ -12,7 +12,7 @@
                 <div class="hard-skill">
                     <div class="hs-front">
                         <h3 class="hs-title">FrontEnd</h3>
-                        <!-- <div class="card">
+                        <div class="card">
                             <h4>HTML & Css</h4>
                             <li>Sass</li>
                             <li>Bootstrap</li>
@@ -37,11 +37,11 @@
                         <div class="card">
                             <h4>CMS</h4>
                             <li>WordPress</li>
-                        </div> -->
+                        </div>
                     </div>
                     <div class="hs-back">
                         <h3 class="hs-title">BackEnd</h3>
-                        <!-- <div class="card">
+                        <div class="card">
                             <h4>Node.js</h4>
                             <li>Express.js</li>
                             <li>Socket.io</li>
@@ -56,11 +56,11 @@
                         <div class="card">
                             <h4>MySQL</h4>
                             <li>PhpMyAdmin</li>
-                        </div> -->
+                        </div>
                     </div>
                     <div class="hs-other">
                         <h3 class="hs-title">Other</h3>
-                        <!-- <div class="card">
+                        <div class="card">
                             <h4>Git</h4>
                         </div>
                         <div class="card">
@@ -68,7 +68,7 @@
                         </div>
                         <div class="card">
                             <h4>UML</h4>
-                        </div> -->
+                        </div>
                     </div>
                 </div>
                 <h2 class="about-f-header" >Soft Skills</h2>
